@@ -1,0 +1,90 @@
+* {
+    margin: 0
+    padding: 0
+    box-sizing: border
+}
+.container {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 80px;;
+}
+.header {
+    border: 3px solid;
+    text-align: center;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+;
+}
+.nev {
+    border: 3px solid;
+    text-align: center;
+    height: 50px;
+    margin-top: 3px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    margin-top: 3px;
+    text-align: center;
+}
+.side1 {
+    border: 3px solid;
+    width: 25%;
+    margin-right: 3px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    
+
+}
+.side2 {
+    border: 3px solid ;
+    width: 25%;
+    margin-left: 3px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.main {
+    border: 3px solid;
+    width: 50%;
+    height: 5;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.footer {
+    border: 3px solid;
+    margin-top: 3px;
+    text-align: center;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.main h3 {
+    color: green;
+}
+.side2 h3 {
+    color: green;
+}
+.side1 h3 {
+    color: green;
+}
+.footer h3 {
+    color: green;
+}
+.nev h3 {
+    color: green;
+}
+.header h3 {
+    color: green;
+}

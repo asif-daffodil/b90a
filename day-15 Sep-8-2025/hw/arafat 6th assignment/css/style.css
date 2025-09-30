@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, rgb(37, 33, 33), black);
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  padding: 0 100px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #84d642;
+  box-shadow: 0 1px 5px #000000;
+}
+
+.menu {
+  top: 15px;
+  position: relative;
+}
+
+nav > img {
+  flex-basis: 25%;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+nav > ul {
+  flex-grow: 1;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  font-size: 20px;
+  color: #84d642;
+}
+
+nav > ul li {
+  position: relative;
+}
+
+nav > ul > li:hover {
+  background-color: #1e300f;
+}
+
+nav > ul > li:hover > a {
+  color: rgb(255, 255, 255);
+}
+
+nav > ul li > a > i {
+  transition: 0.5s;
+}
+
+nav li:hover > a > i {
+  transform: rotate(180deg);
+}
+
+nav > ul > li a {
+  text-decoration: none;
+  line-height: 60px;
+  color: inherit;
+  display: block;
+  padding: 0 20px;
+}
+
+nav > ul > li > ul {
+  list-style: none;
+  position: absolute;
+  width: max-content;
+  background: #1e300f;
+  color: white;
+  transition: 0.5s;
+  top: 90%;
+  left: 0%;
+  opacity: 0;
+  visibility: hidden;
+}
+
+nav > ul > li:hover > ul {
+  top: 110%;
+  opacity: 1;
+  visibility: visible;
+}
+
+nav > ul > li > ul > li:hover {
+  background: #84d642;
+  color: black;
+}
+
+.snav {
+  position: absolute;
+  list-style: none;
+  width: max-content;
+  background: #1e300f;
+  color: white;
+  transition: 0.5s;
+  left: 102%;
+  top: 50%;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.snav > li{
+    position: relative;
+}
+
+.snav > li> a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.snav > li:hover{
+    background: #84d642;
+    color: #000000;
+}
+
+.snav > li > a:hover{
+    color: #000000;
+}
+
+nav > ul > li:hover > ul > li:hover > ul{
+    visibility: visible;
+    opacity: 1;
+}
+
+.body{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body > img {
+    width: 500px;
+}
+
+.body> .savg{
+    width: 350px;
+}

@@ -1,0 +1,43 @@
+.guru{
+background-color: brown;
+text-shadow: 0cap;
+margin: 20px;
+padding-left: 6px;
+padding-right: 6px;
+padding-top: 6px;
+padding-bottom: 6px;
+border: 1px solid black;
+text-align: center;
+height: 100px;
+}
+.power{
+    background-color: hotpink;
+    margin: 20px;
+    padding-left: 6px;
+padding-right: 6px;
+padding-top: 6px;
+padding-bottom: 6px;
+border: 1px solid black;
+text-align: center;
+height: 100px;
+}
+.sexy{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+.man{
+    background-color: brown;
+text-shadow: 0cap;
+margin: 20px;
+padding-left: 6px;
+padding-right: 6px;
+padding-top: 6px;
+padding-bottom: 6px;
+border: 1px solid black;
+text-align: center;
+height: 100px;
+}
+

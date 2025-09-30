@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mozilla Headline", sans-serif;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  padding: 0 100px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+  box-shadow: 0px 0px 3px rgba(117, 193, 4, 0.836);
+}
+
+nav>img {
+  flex-basis: 25%;
+  max-height: 60px;
+  width: auto;
+  object-fit: contain;
+  object-position: o center;
+}
+
+nav>ul {
+  flex-grow: 1;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  font-size: 20px;
+}
+
+nav>ul li {
+  position: relative;
+}
+
+nav>ul li:hover {
+  background: rgb(252, 84, 0);
+}
+
+nav>ul li:hover >a {
+  color: white;
+}
+
+nav>ul li>a>i {
+  transition: 0.5s;
+}
+
+nav>ul li:hover >a>i {
+  transform: rotate(180deg);
+}
+
+nav>ul>li a {
+  text-decoration: none;
+  line-height: 60px;
+  color: rgb(19, 10, 192);
+  display: block;
+  padding: 0 20px;
+}
+
+nav>ul>li>ul {
+  list-style: none;
+  position: absolute;
+  width: max-content;
+  background: rgb(212, 103, 7);
+  color: aliceblue;
+  transition: 0.5s;
+  top: 140%;
+  left: 0%;
+  opacity: 0;
+  visibility: hidden;
+}
+
+nav>ul>li:hover >ul {
+  top: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+nav>ul>li>ul>li:hover {
+  background: #fff;
+}
+
+nav>ul>li>ul>li:hover >a {
+  background: #da4e09;
+}
+
+
+

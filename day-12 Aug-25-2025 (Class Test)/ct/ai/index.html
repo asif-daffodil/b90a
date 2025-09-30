@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Grid</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f6fa;
+            padding: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: max-content;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .card-body h3 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .card-body p {
+            font-size: 14px;
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 15px 15px;
+        }
+
+        .price {
+            font-size: 16px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .heart {
+            font-size: 20px;
+            cursor: pointer;
+            color: #888;
+        }
+
+        .heart:hover {
+            color: red;
+        }
+
+        .btn {
+            display: block;
+            width: 90%;
+            margin: 0 auto 15px;
+            padding: 10px;
+            background: #0066ff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #004ecb;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="./Image.png" alt="Lexicon Luxe">
+            <div class="card-body">
+                <h3>Lexicon Luxe</h3>
+                <p class="price">$10</p>
+            </div>
+            <button class="btn">Add to cart</button>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="./Image (1).png" alt="Adjective Attire">
+            <div class="card-body">
+                <h3>Adjective Attire</h3>
+                <p class="price">$12</p>
+            </div>
+            <button class="btn">Add to cart</button>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="./Image (2).png" alt="ThreadCraft Vibes">
+            <div class="card-body">
+                <h3>ThreadCraft Vibes</h3>
+                <p class="price">$14</p>
+            </div>
+            <button class="btn">Add to cart</button>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <img src="./Image (3).png" alt="Verbal Vogue Tees">
+            <div class="card-body">
+                <h3>Verbal Vogue Tees</h3>
+                <p class="price">$12</p>
+            </div>
+            <button class="btn">Add to cart</button>
+        </div>
+    </div>
+</body>
+
+</html>

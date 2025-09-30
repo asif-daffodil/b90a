@@ -1,0 +1,276 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    background-color: white;
+    width: 1013px;
+    height: 470px;
+}
+
+.first{
+    width: 242px;
+    height: 470px;
+}
+
+.second{
+    width: 242px;
+    height: 470px;
+}
+
+.third{
+    width: 242px;
+    height: 470px;
+}
+
+.fourth{
+    width: 242px;
+    height: 470px;
+}
+
+.item-1{
+    width: 229px;
+    height: 305px;
+    display: flex;
+    justify-self: center;
+    padding-top: 8px;
+}
+
+.first > h3{
+    font-family: serif;
+    font-size: 15.5px;
+    font-weight: bold;
+    color: #4D5166;
+    width: 102px;
+    margin-left: 17px;
+    margin-top: 17px;
+}
+
+.d{
+    display: flex;
+    align-items: center;
+}
+
+.d > p{
+    font-family: serif;
+    font-size: 15.5px;
+    font-weight: bold;
+    color: #4D5166;
+    width: 102px;
+    margin-left: 17px;
+    margin-top: 17px;
+}
+
+.item-2{
+    font-family: serif;
+    font-size: 15.5px;
+    font-weight: bold;
+    color: #4D5166;
+    width: 32px;
+    height: 32px;
+    margin-left: 120px;
+    margin-right: 8px;
+    margin-top: 10px;
+}
+
+.first > button{
+    font-family: serif;
+    font-size: 15.5px;
+    font-weight: bold;
+    color: #BDCEFE;
+    background-color: #155DFC;
+    width: 208px;
+    height: 43px;
+    margin-left: 17px;
+    margin-top: 17px;
+}
+
+.item-3{
+    width: 229px;
+    height: 305px;
+    display: flex;
+    justify-self: center;
+    padding-top: 8px;
+}
+
+.second > h3{
+    font-family: serif;
+    font-size: 15.5px;
+    font-weight: bold;
+    color: #4D5166;
+    width: 102px;
+    margin-left: 17px;
+    margin-top: 17px;
+}
+
+.f{
+    display: flex;
+    align-items: center;
+}
+
+.f > p{
+    font-family: serif;
+    font-size: 15.5px;
+    font-weight: bold;
+    color: #4D5166;
+    width: 102px;
+    margin-left: 17px;
+    margin-top: 17px;
+}
+
+.item-4{
+    font-family: serif;
+    font-size: 15.5px;
+    font-weight: bold;
+    color: #4D5166;
+    width: 32px;
+    height: 32px;
+    margin-left: 120px;
+    margin-right: 8px;
+    margin-top: 10px;
+}
+
+.second > button{
+    font-family: serif;
+    font-size: 15.5px;
+    font-weight: bold;
+    color: #BDCEFE;
+    background-color: #155DFC;
+    width: 208px;
+    height: 43px;
+    margin-left: 17px;
+    margin-top: 17px;
+}
+/* 3rd */
+
+.item-5{
+    width: 229px;
+    height: 305px;
+    display: flex;
+    justify-self: center;
+    padding-top: 8px;
+}
+
+.third > h3{
+    font-family: serif;
+    font-size: 15.5px;
+    font-weight: bold;
+    color: #4D5166;
+    width: 102px;
+    margin-left: 17px;
+    margin-top: 17px;
+}
+
+.g{
+    display: flex;
+    align-items: center;
+}
+
+.g > p{
+    font-family: serif;
+    font-size: 15.5px;
+    font-weight: bold;
+    color: #4D5166;
+    width: 102px;
+    margin-left: 17px;
+    margin-top: 17px;
+}
+
+.item-6{
+    font-family: serif;
+    font-size: 15.5px;
+    font-weight: bold;
+    color: #4D5166;
+    width: 32px;
+    height: 32px;
+    margin-left: 120px;
+    margin-right: 8px;
+    margin-top: 10px;
+}
+
+.third > button{
+    font-family: serif;
+    font-size: 15.5px;
+    font-weight: bold;
+    color: #BDCEFE;
+    background-color: #155DFC;
+    width: 208px;
+    height: 43px;
+    margin-left: 17px;
+    margin-top: 17px;
+}
+/* last */
+
+.item-7{
+    width: 229px;
+    height: 305px;
+    display: flex;
+    justify-self: center;
+    padding-top: 8px;
+}
+
+.fourth > h3{
+    font-family: serif;
+    font-size: 15.5px;
+    font-weight: bold;
+    color: #4D5166;
+    width: 102px;
+    margin-left: 17px;
+    margin-top: 17px;
+}
+
+.h{
+    display: flex;
+    align-items: center;
+}
+
+.h > p{
+    font-family: serif;
+    font-size: 15.5px;
+    font-weight: bold;
+    color: #4D5166;
+    width: 102px;
+    margin-left: 17px;
+    margin-top: 17px;
+}
+
+.item-8{
+    font-family: serif;
+    font-size: 15.5px;
+    font-weight: bold;
+    color: #4D5166;
+    width: 32px;
+    height: 32px;
+    margin-left: 120px;
+    margin-right: 8px;
+    margin-top: 10px;
+}
+
+.fourth > button{
+    font-family: serif;
+    font-size: 15.5px;
+    font-weight: bold;
+    color: #BDCEFE;
+    background-color: #155DFC;
+    width: 208px;
+    height: 43px;
+    margin-left: 17px;
+    margin-top: 17px;
+}

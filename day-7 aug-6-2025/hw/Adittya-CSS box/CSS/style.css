@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Permanent Marker", cursive;
+}
+
+.header {
+    padding: 20px;
+    border: 1px solid lime;
+    text-align: center;
+    background-color: blueviolet;
+    text-shadow: 3px 3px 3px white;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.navigation-menu {
+    padding: 20px;
+    border: 1px solid lime;
+    text-align: center;
+    background-color: chocolate;
+    margin-left: 60px;
+    margin-right: 60px;
+    box-shadow: 5px 5px 5px black;
+    font-size: 1.5rem;
+
+}
+
+.footer {
+    padding: 20px;
+    border: 1px solid lightcoral;
+    text-align: center;
+    background-color: darkslateblue;
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 5px black;
+
+}
+
+.content-area {
+    display: flex;
+    padding: 10px;
+}
+
+.content-left {
+    width: 20%;
+    padding: 20px;
+    border: 1px solid lime;
+    text-align: center;
+    background-color: lightcoral;
+    text-shadow: 3px 3px 3px whitesmoke;
+    box-shadow: 5px 5px 5px black;
+    margin-left: 55px;
+}
+
+.main-content {
+    width: 60%;
+    margin: 0 10px;
+    padding: 20px;
+    border: 1px solid lime;
+    text-align: center;
+    background-color: lightseagreen;
+    text-shadow: 5px 5px 5px whitesmoke;
+    box-shadow: 5px 5px 5px black;
+
+}
+
+.content-right {
+    width: 20%;
+    padding: 20px;
+    border: 1px solid lime;
+    text-align: center;
+    background-color: lightcoral;
+    text-shadow: 3px 3px 3px whitesmoke;
+    box-shadow: 5px 5px 5px black;
+    margin-right: 55px;
+
+}

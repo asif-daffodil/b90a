@@ -1,0 +1,400 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fast_body {
+  display: flex;
+  gap: 20px; 
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  height: 748px;
+  /* width: 1200px; */
+}
+
+/* Header */
+header {
+  position: sticky; /* সবসময় top এ থাকবে */
+  top: 0;
+  /* width: 1200px; */
+  background: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 10;
+}
+
+header nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Box Style */
+.box {
+  background: lightblue;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid black;
+}
+
+/* Specific size */
+.box1{
+  height: 270px;
+  width: 582px;
+  background-color: white;
+
+}
+
+.box2 {
+  height: 414px;
+  width: 440px;
+  background-color: white;
+  margin-left: auto;
+}
+
+.box3 {
+  height: 110px;
+  width: 986px;
+  background-color:white;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box1 h1{
+    display: flex;
+    text-align: left;
+    font-size: 60px;
+}
+.box1 p {
+  display: flex;
+  flex-direction: column; /* vertical alignment, text এর নিচে button */
+
+  gap: 10px; /* text আর button এর মধ্যে ফাঁক */
+  text-align: left;
+}
+
+.box1 button {
+  padding: 10px 20px;
+  background-color: #df2fd6; /* মূল বাটনের রঙ */
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-align: left;
+}
+
+/* Hover effect */
+.box1 button:hover {
+  background-color: #45a049; /* hover এ রঙ পরিবর্তন */
+  transform: scale(1.05);
+}
+
+.box1 {
+  height: 270px;
+  width: 582px;
+  background-color: white;
+  display: flex;
+  /* ;flex-direction: column       vertical stacking */
+  display: flex;
+  flex-direction: column;       /* vertical stacking */
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.box1 h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.box1 p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.4;
+  gap: 20px;
+}
+
+.box1 button {
+  padding: 10px 20px;
+  background-color: #df2fd6;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  align-self: flex-start; /* শুধু horizontal ডানদিকে নামাবে */
+  transition: 0.3s ease;
+}
+
+.box1 button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* লিঙ্ক এবং আইকনের মধ্যে ফাঁক */
+  font-family: Arial, sans-serif;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: #f0f0f0;
+  color: #007bff;
+}
+
+nav .search,
+nav .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+nav .search:hover,
+nav .card:hover {
+  background-color: #e0e0e0;
+}
+
+nav .search i,
+nav .card i {
+  font-size: 16px;
+  color: #333;
+}
+
+
+
+.update{
+  height: 1662px;
+  background-color:white;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 5px;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.update > div:nth-child(1) {
+  background: white;
+  width: 329px;
+  height: 476px;
+}
+
+.update > div:nth-child(2) {
+  background: white;
+  width: 329px;
+  height: 476px;
+}
+
+.update > div:nth-child(3) {
+  background: white;
+  width: 329px;
+  height: 476px;
+}
+
+.update > div:nth-child(4) {
+  background: white;
+  width: 329px;
+  height: 476px;
+}
+
+.update > div:nth-child(5) {
+  background: white;
+  width: 329px;
+  height: 476px;
+}
+
+.update > div:nth-child(6) {
+  background: white;
+  width: 329px;
+  height: 476px;
+}
+
+.update > div:nth-child(7) {
+  background: white;
+  width: 329px;
+  height: 476px;
+}
+
+.update > div:nth-child(8) {
+  background: white;
+  width: 329px;
+  height: 476px;
+}
+
+.update > div:nth-child(9) {
+  background: white;
+  width: 329px;
+  height: 476px;
+}
+.update > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   
+}
+.tex{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.last > div {
+  width: 150px;
+  height: 100px;
+  background: white;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* div এর ভেতরের content মাঝখানে */
+  align-items: center;
+}
+.update {
+  height: 1662px;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2px;
+  gap: 2px;
+  margin: 20px;
+  justify-content: center;
+}
+
+.update > div {
+  background-color:white; /* শুধু দেখানোর জন্য */
+  flex: 0 0 calc(33.33% - 20px); /* প্রতি লাইনে 3 টা */
+  height: 270px; /* তোমার প্রয়োজন অনুযায়ী height দাও */
+}
+.update button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+
+  /* ডান পাশে বসানোর জন্য */
+  display: block;
+  margin-left: auto;  /* button কে container এর ডানদিকে ঠেলবে */
+}
+
+.update button:hover {
+  background-color: #f32775;
+}
+.Last {
+  background-color:;
+  width: 100%;
+  height: 609px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  /* horizontal center */
+  align-items: flex-start;  /* vertical top alignment */
+  padding-top: 20px;        /* উপরের ফাঁকা চাইলে */
+}
+
+.Last .feature {
+  display: flex;
+
+  align-items: center;      /* image + text + extra vertical center হবে */
+  gap: 40px;                /* image ও text এর মাঝে ফাঁকা */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;      /* কোণা গোলাকার */
+  max-width: 1110px;
+  width: 100%;
+}
+
+
+/* Image */
+.Last .feature img {
+  width: ;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Text content */
+.Last .feature .text {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* H1 */
+.Last .feature .text h1 {
+  font-size: 28px;
+  color: #000;
+  margin: 0;
+}
+
+/* Paragraph */
+.Last .feature .text p {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Button */
+.Last .feature .text button {
+  align-self: flex-start;
+  background-color: #e71d5a;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.Last .feature .text button:hover {
+  background-color: #0056b3;
+}
+.Last .extra {
+  width: 100%;             /* পুরো parent width নেবে */
+  height: 150px;           /* height adjust করতে পারো */
+  background-color: #e71d5a;  /* background color */
+  border-radius: 8px;         /* কোণা গোলাকার */
+  margin-top: 20px;           /* উপরের div থেকে ফাঁকা রাখতে */
+}
+.Last .extra {
+  width: 100%;               /* পুরো width নেবে */
+  height: 150px;             /* চাইলে adjust করো */
+  background-color: #e71d5a;
+  border-radius: 8px;
+  display: flex;             /* flexbox enable */
+  flex-direction: column;    /* vertical stacking */
+  justify-content: center;    /* vertical center */
+  align-items: center;        /* horizontal center */
+  gap: 5px;                  /* text এর মধ্যে ফাঁকা */
+  color: #fff;               /* text color */
+  text-align: center;        /* centered text */
+}

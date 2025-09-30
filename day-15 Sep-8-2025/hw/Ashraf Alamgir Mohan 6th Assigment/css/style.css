@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100%;  
+    display: flex;
+    padding: 0 100px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid black;
+    box-shadow: 0px 1px 5px rgb(4, 47, 202);
+    
+}
+
+nav > img{
+    flex-basis: 25%;
+    max-height: 200px;
+    width: auto;
+    object-fit: contain;
+    object-position: start center;
+
+}
+
+nav > ul{
+    flex-grow: 1;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    font-size: 22px;
+    
+}
+
+nav > ul  li {
+    position: relative ;
+}
+nav > ul li:hover{
+    background: rgb(225, 136, 12);
+}
+nav > ul li:hover a{
+    color: rgb(105, 9, 9);
+}
+
+nav > ul li > a > i {
+    transition: 0.5s;
+}
+
+nav > ul li:hover a > i{
+    transform: rotate(180deg);
+}
+nav > ul > li  a {
+    text-decoration: none;
+    line-height: 60px;
+    color: rgb(10, 10, 10);
+    display: block;
+    padding: 0 20px;
+}
+nav > ul > li > ul{
+    list-style: none;
+    position: absolute;
+    width: max-content;
+    transform: 0.5s;
+    top: 140%;
+    left: 40%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav > ul > li:hover > ul {
+    top: 100%;
+    left: 0%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.ssnav{
+    position: absolute;
+    top: 0;
+    left: 140%;
+    list-style: none;
+    background: rgb(229, 223, 226);
+    width: max-content;
+}

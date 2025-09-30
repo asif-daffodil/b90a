@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url("../image/cursor.png"), auto;
+}
+
+.shoeib {
+    width: 100px;
+    height: 100px;
+    background: brown;
+    transition: 0.5s;
+}
+
+.shoeib:hover {
+    /* transform: translateX(-50px) translateY(-50px); */
+    /* transform: translate(50px, 50px); */
+    /* transform: translate(50%, 50%); */
+    /* transform: scale(50%); */
+    /* transform: skewX(45deg) skewY(45deg); */
+    /* transform: skew(30deg, 30deg); */
+    /* transform: rotateX(45deg) rotateY(45deg) rotateZ(45deg); */
+    transform: translate(50px, 50px) scale(120%) skew(5deg, 5deg) rotate(360deg);
+}

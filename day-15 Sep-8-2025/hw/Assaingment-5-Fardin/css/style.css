@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    padding: 0 100px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    box-shadow: 0 2px;
+}
+nav >img{
+    flex-basis: 25%;
+    max-width: 60px;
+    height: auto;
+    object-fit: contain;
+    object-position: 0 center;
+}
+
+nav > ul {
+    flex-grow: 1;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12PX;
+    font-size: 20px;
+    
+}
+
+nav >ul >li{
+    position: relative;
+}
+nav >ul li:hover{
+    background-color:rgb(8, 70, 121);
+}
+
+i{
+    transition: 0.8s;
+}
+
+
+nav >ul li:hover>a{
+    color: aliceblue;
+}
+nav >ul li:hover>a >i{
+    transform: rotate(180deg);
+}
+
+
+nav >ul>li a{
+    text-decoration: none;
+    line-height: 60px;
+    color:inherit;
+    padding: 0 10px;
+    display: block;
+}
+.jaf{
+ list-style: none;
+ position: absolute;
+ width: max-content;
+ background:rgb(8, 70, 121);
+color: aliceblue;
+transition: 0.5s;
+top: 140%;
+left: 0%;
+opacity: 0;
+visibility: hidden;
+border: 1px solid rgb(8, 70, 121);
+}
+
+nav > ul >li:hover> .jaf{
+    top: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.jaf >li{
+    width: 100%;
+    position: relative;
+    z-index: 100;
+}
+
+.jaf >li:hover {
+background:#fff;
+}
+
+.jaf >li>a {
+    color: inherit;
+}
+
+
+.jaf >li:hover >a {
+    background: rgb(8, 70, 121);
+}
+
+.jaff{
+    position: absolute;
+    top: 0;
+    left: 140%;
+    list-style: none;
+    background:white;
+    width: max-content;
+    color:aliceblue;
+    border: 1px solid rgb(8, 70, 121);
+    transition: 0.5s;
+  
+}
+
+.jaff>li {
+    position: relative;
+}
+
+.jaff>li >a{
+    text-decoration: none;
+    color: inherit;
+}
+   
+.jaff>li:hover{
+  background: rgb(8, 70, 121);
+}
+.jaff>li:hover >a{
+    color:#fff;
+}
+ .jaff:hover{
+    visibility: visible;
+    opacity: 1;
+    left: 100%;
+ }

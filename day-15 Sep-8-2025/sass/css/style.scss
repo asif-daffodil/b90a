@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$textColor : #666;
+
+.para {
+    color: $textColor;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.abul {
+    @extend .para;
+}
+
+@mixin childCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.world {
+    margin: 20px auto;
+    width: 300px;
+    height: 300px;
+    background-color: lightblue;
+    @include childCenter;
+
+    >.asia {
+        width: 200px;
+        height: 200px;
+        background: white;
+        @include childCenter;
+
+        >.bangladesh {
+            width: 100px;
+            height: 100px;
+            background: lightgreen;
+            @include childCenter;
+        }
+    }
+}

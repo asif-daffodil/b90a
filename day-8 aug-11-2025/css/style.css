@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.abul {
+    width: 200px;
+    height: 200px;
+    background: cornflowerblue;
+    position: relative;
+    z-index: 10;
+}
+
+.babul {
+    width: 200px;
+    height: 200px;
+    background: limegreen;
+    position: relative;
+    top: -100px;
+    left: 100px;
+}
+
+.kabul {
+    width: 200px;
+    height: 200px;
+    background: hotpink;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: -300;
+}
+
+.biriyani {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px #000;
+    position: relative;
+}
+
+.biriyani > span {
+    position: absolute;
+    background: red;
+    display: block;
+    padding: 6px;
+    border-radius: 16px/50%;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 24px;
+    top: -20px;
+    right: 75px;
+    width: 150px;
+    text-align: center;
+}
+
+.biriyani > img {
+    width: 100%;
+}
+
+.biriyani > div {
+    padding: 10px;
+}
+
+.biriyani > div > p {
+    margin: 10px 0;
+}
+
+.biriyani > div > button {
+ border-width: 0;
+ background: cornflowerblue;
+ color: #fff;
+ padding: 6px 16px;
+ border-radius: 6px;
+}
+
+.trump {
+    font-size: 72px;
+}
+
+.trump::before {
+    content: "Mr ";
+}
+
+.trump::after {
+    content: " Traif Master";
+}
+
+.trump:hover::after {
+    content: " 50% Tarif";
+}
+
+.trump:hover::before {
+    content: "Mrs. ";
+}
+
+.biriyani > div > h2 {
+    position: relative;
+}
+
+.biriyani > div > h2::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #000;
+}
+
+
+.bd::before {
+    content: "Bangladesh";
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.bd:hover::before {
+    content: attr(data-msg);
+}

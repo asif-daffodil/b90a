@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: oswald, sans-serif;
+}
+
+
+nav {
+    width: 100%;
+    display: flex;
+    padding: 0 100px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 5px 5px 5px black;
+    border-bottom: 2px solid black;
+    background: rgb(33, 57, 128);
+}
+
+nav>img {
+    flex-basis: 25%;
+    width: auto;
+    max-height: 50px;
+    object-fit: contain;
+    object-position: 0 center;
+}
+
+nav>ul {
+    flex-grow: 1;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    font-size: 22px;
+}
+
+nav>ul li {
+    position: relative;
+}
+
+nav>ul li:hover {
+    transform: scale(120%);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    background: rgb(181, 79, 207);
+    border-radius: 10%;
+    border: 1px solid black;
+}
+
+nav>ul li:hover a {
+    color: rgb(236, 234, 234);
+}
+
+nav>ul li:hover>a>i {
+    transform: rotate(180deg);
+    transition: all 0.5s ease-in-out;
+}
+
+nav>ul>li a {
+    text-decoration: none;
+    line-height: 60px;
+    color: inherit;
+    display: block;
+    padding: 0 20px;
+
+}
+
+nav>ul>li>ul {
+    list-style: none;
+    position: absolute;
+    width: max-content;
+    background: rgb(33, 57, 128);
+    color: inherit;
+    transition: 0.5s;
+    top: 140%;
+    left: 0%;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+nav>ul>li:hover>ul {
+    top: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav>ul>li>ul>li:hover {
+    background: rgb(181, 79, 207);
+    border-radius: 20%;
+    transform: scale(80%);
+    border: 1px solid black;
+
+}
+
+.ssnav {
+    position: absolute;
+    top: 0;
+    left: 140%;
+    list-style: none;
+    background: rosybrown;
+    color: blueviolet;
+    width: max-content;
+    border: 1px solid black;
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.ssnav>li {
+    position: relative;
+}
+
+.ssnav>li>a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.ssnav>li:hover {
+    background: rgb(69, 167, 216);
+    transform: scale(80%);
+
+}
+
+
+.ssnav>li:hover>a {
+    color: rgb(211, 16, 16);
+}
+
+nav>ul>li>ul>li:hover>.ssnav {
+    top: 0;
+    left: 100%;
+    visibility: visible;
+    opacity: 1;
+}

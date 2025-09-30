@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mohan {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(to bottom right, #ff7e5f, #fff);
+}
+
+.modi {
+    width: 200px;
+    height: 200px;
+    background: url("../images/modi-gerua.jpg");
+    background-size: cover;
+    border: 1px solid black;
+    position: relative;
+}
+
+.putin,
+.shijinping,
+.kimjonun,
+.trump {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.putin {
+    background: url("../images/putin.jpg");
+    background-size: cover;
+    animation: putin 5s infinite linear;
+}
+
+
+.shijinping {
+    background: url("../images/shijinping.jpg");
+    background-size: cover;
+    animation: shijinping 5s infinite linear;
+}
+
+.kimjonun {
+    background: url("../images/kimjonun.jpg");
+    background-size: cover;
+    animation: kimjonun 5s infinite linear;
+}
+
+.trump {
+    background: url("../images/trump.jpg");
+    background-size: cover;
+    animation: trump 5s infinite linear;
+}
+
+@keyframes putin {
+    0% {
+        top: -50px;
+        left: -50px;
+    }
+
+    25% {
+        top: -50px;
+        left: 150px;
+    }
+
+    50% {
+        top: 150px;
+        left: 150px;
+    }
+
+    75% {
+        top: 150px;
+        left: -50px;
+    }
+
+    100% {
+        top: -50px;
+        left: -50px;
+    }
+}
+
+@keyframes shijinping {
+    0% {
+        top: -50px;
+        right: -50px;
+    }
+
+    25% {
+        top: 150px;
+        right: -50px;
+    }
+
+    50% {
+        top: 150px;
+        right: 150px;
+    }
+
+    75% {
+        top: -50px;
+        right: 150px;
+    }
+
+    100% {
+        top: -50px;
+        right: -50px;
+    }
+}
+
+@keyframes kimjonun {
+    0% {
+        bottom: -50px;
+        right: -50px;
+    }
+
+    25% {
+        bottom: -50px;
+        right: 150px;
+    }
+
+    50% {
+        bottom: 150px;
+        right: 150px;
+    }
+
+    75% {
+        bottom: 150px;
+        right: -50px;
+    }
+
+    100% {
+        bottom: -50px;
+        right: -50px;
+    }
+
+}
+
+@keyframes trump {
+    0% {
+        bottom: -50px;
+        left: -50px;
+    }
+
+    25% {
+        bottom: 150px;
+        left: -50px;
+    }
+
+    50% {
+        bottom: 150px;
+        left: 150px;
+    }
+
+    75% {
+        bottom: -50px;
+        left: 150px;
+    }
+
+    100% {
+        bottom: -50px;
+        left: -50px;
+    }
+}
+
+.hamim {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #ff7e5f, #fff);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 220px));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    z-index: -10;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #000;
+    transition: 0.3s;
+    position: relative;
+    z-index: 1;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card>img {
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.card>div:nth-child(2) {
+    padding: 10px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 10px;
+}
+
+.card>div>h2 {
+    font-size: 22px;
+}
+
+.card>div>p {
+    font-size: 14px;
+}
+
+.card>div>button {
+    background: #ff7e5f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    width: max-content;
+}
+
+.card>div>button:hover {
+    background: #ff6b4f;
+}
+
+.guru {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #ff7e5f;
+    color: #fff;
+    font-size: 12px;
+    height: max-content;
+    text-transform: uppercase;
+    padding: 4px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000;
+    width: 140px;
+    text-align: center;
+    transform: rotate(-45deg) translate(-40px, -20px);
+    clip-path: polygon(0 100%, 16% 0, 84% 0, 100% 100%);
+    z-index: 10;
+}
+
+.guru1 {
+    position: absolute;
+    top: -15px;
+    left: 54px;
+    background: #7a3929;
+    width: 30px;
+    height: 30px;
+    z-index: -1;
+}
+
+.guru2 {
+    position: absolute;
+    top: 52px;
+    left: -14px;
+    background: #7a3929;
+    width: 30px;
+    height: 30px;
+    z-index: -1;
+}

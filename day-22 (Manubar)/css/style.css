@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 80px;
+    background: #000;
+}
+
+nav > figure {
+    height: 80px;
+    width: max-content;
+}
+
+nav > figure > img {
+    height: 100%;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+}
+
+nav > ul > li a {
+    text-decoration: none;
+    display: block;
+    padding: 0px 20px;
+    line-height: 80px;
+    color: white;
+    text-align: center;
+}
+
+nav > ul li:hover {
+    background: maroon;
+}
+
+i {
+    transition: 0.5s;
+}
+
+.jin {
+    position: relative;
+}
+
+.jin:hover > a > i {
+    transform: rotate(180deg);
+}
+
+.badsha {
+    position: absolute;
+    left: 50%;
+    list-style: none;
+    background: #000;
+    width: 150%;
+    transform: translateX(-50%);
+    top: 150%;
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000;
+}
+
+.jin:hover > .badsha {
+    visibility: visible;
+    top: 100%;
+    opacity: 1;
+}
+
+#wowslider-container0 {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: -100;
+}

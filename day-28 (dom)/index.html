@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <button onclick="alert('Arafat')" >click Here</button>
+    <div id="arafat" onmouseover="this.innerHTML='Arafat'" onmouseout="this.innerHTML='Auto Pass'" >arafat kintu parashuna korei pass korechilo!</div>
+    <div id="shoyeb">Auto Fail</div>
+    <button onclick="document.getElementById('shoyeb').innerHTML='Text has been changed'">Change Soyeb</button>
+
+    <div class="batti">
+        <button onclick="document.getElementById('light').src='./images/pic_bulbon.gif'">On</button>
+        <img src="./images/pic_bulboff.gif" alt="" id="light">
+        <button onclick="document.getElementById('light').src='./images/pic_bulboff.gif'">Off</button>
+    </div>
+
+    <button id="myBtn">My Name</button>
+
+    <script src="./js/script.js"></script>
+    <script>
+        document.getElementById("arafat").innerHTML = "Auto Pass";
+    </script>
+</body>
+</html>

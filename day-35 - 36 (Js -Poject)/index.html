@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <div class="container mx-auto min-h-screen grid place-items-center">
+        <div class="border rounded p-4 shadow">
+            <form action="" class="flex mb-3" id="taskForm">
+                <input type="text" placeholder="Task" class="border border-r-0 rounded-l p-2 w-96" name="task">
+                <button type="submit"
+                    class="border border-black rounded-r p-2 cursor-pointer bg-sky-500 text-white font-bold hover:bg-sky-600">
+                    Add Task
+                </button>
+            </form>
+            <p id="errTask" class="text-xs text-red-500"></p>
+            <ul class="*:even:bg-sky-50 [&>*:not(:last-child)]:border-b" id="taskList">
+                
+            </ul>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

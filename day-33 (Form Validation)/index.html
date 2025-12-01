@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="" id="myForm">
+        <input type="text" name="username" placeholder="Username">
+        <button type="submit">Submit</button>
+    </form>
+    <div id="errUser"></div>
+
+    <script>
+        const myForm = document.querySelector('#myForm');
+        const errUser = document.querySelector('#errUser');
+        myForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const formData = new FormData(myForm);
+            const username = formData.get('username');
+            if(username.trim() === "") {
+                errUser.textContent = "Username is required";
+            }else{
+                console.log(username);
+                errUser.textContent = "";
+                myForm.reset();
+            } 
+
+        });
+    </script>
+</body>
+</html>

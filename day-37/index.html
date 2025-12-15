@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        localStorage.setItem('username', 'Arafat Hossain Mohan Guru');
+        const userInfo = {
+            name: "Arafat Hossain Mohan Guru",
+            age: 24,
+            profession: "Web Developer",
+            country: "Bangladesh"
+        }
+        localStorage.setItem('userInfo', JSON.stringify(userInfo));
+
+        // update data
+        localStorage.setItem('username', 'Updated Name');
+
+        // Delete data
+        localStorage.removeItem('username');
+
+        const localUser = localStorage.getItem('userInfo');
+        const userObj = JSON.parse(localUser);
+        userObj.msg = "Arafater pet kharap!";
+        localStorage.setItem('userInfo', JSON.stringify(userObj));
+
+        const ashrafVai = ["Sinior Developer", "Married", "Pakistani wife", "1 Daughter", "Nana beche ache"];
+
+        const hamimVai = ["Sinior singer", "Unmarried", "Looking for a wife", "No kids"];
+
+        const ashrafHamim = [...ashrafVai, ...hamimVai];
+        console.log(ashrafHamim);
+    </script>
+</body>
+</html>

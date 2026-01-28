@@ -1,0 +1,41 @@
+{
+  "students": [
+    {
+      "id": "68ba",
+      "name": "Aditta",
+      "age": 21,
+      "major": "MERN"
+    },
+    {
+      "id": "c30f",
+      "name": "Rifat",
+      "age": 27,
+      "major": "MERN"
+    },
+    {
+      "id": "e5f3",
+      "name": "Mahin",
+      "age": 20,
+      "major": "Python"
+    },
+    {
+      "id": "8970",
+      "name": "Musa",
+      "age": 20,
+      "major": "Python"
+    },
+    {
+      "name": "Mohan Ashraf",
+      "age": 13,
+      "major": "MERN",
+      "id": "aaab",
+      "Age": 13
+    },
+    {
+      "id": "6121",
+      "name": "Guru",
+      "age": "35",
+      "major": "Pythin"
+    }
+  ]
+}

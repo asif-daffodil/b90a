@@ -1,5 +1,10 @@
+import { useContext } from "react";
+import { ThemeContext } from "../../ThemeContext";
+import ThemeChange from "./ThemeChange";
+
 
 const Contact = () => {
+    const [theme] = useContext(ThemeContext);
     return (
         <div className="container">
             <div className="row">
@@ -45,6 +50,11 @@ const Contact = () => {
                             </tr>
                         </tbody>
                     </table>
+                    <div>
+                        {theme}
+                        <ThemeChange />
+                    </div>
+
                 </div>
             </div>
         </div>
